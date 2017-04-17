@@ -1,0 +1,8 @@
+.row{
+	background-color: pink;
+	margin: 15px;
+}
+
+.row > div {
+	border: 1px solid black;
+}
