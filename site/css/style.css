@@ -1,16 +1,240 @@
-body{
-	font-family: 'Oxygen', sans-serif;
-	background-color: pink;
-}
-#header-nav{
-	background-color: red;
+ body {
 
-	border-radius: 0px;
-	border: 0px;
+ 	font-size: 16px;
+ 	color: #fff;
+ 	background-color: #61122f;
+ 	font-family: 'Oxygen', sans-serif;
+ }
+
+
+ #header-nav {
+ 		background-color: #f6b319;
+ 		border-radius: 0;
+ 		border: 0;
+ }
+
+ #logo-img {
+ 	background: url('../images/star-k-logo.png') no-repeat;
+	background-size:155px; 
+ 	height: 150px;
+ 	width: 150px;
+ 	border: 1px solid black;
+
+ }
+ /* incorrect mediq query and test id */
+#test{
+	float: left;
+    @media
 }
-#logo-img{
-	background: url('../images/logo-img.jpg') no-repeat;
-	width: 150px;
-	height:150px;
-	margin: 10px 15px 10px 0;
+@media (max-width: 780px) {
+    #test {
+    	display: none;
+    }
 }
+.navbar-brand{
+	margin-left: 10px;
+}
+.navbar-brand h1{
+  font-family: 'Lora', serif;
+  color: #557c3e;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;
+}
+
+.navbar-brand p {
+	color: #000;
+	text-transform: uppercase;
+	font-size: .7em;
+	margin-top: 15px;
+}
+
+.navbar-brand p span{
+    vertical-align: middle;
+}
+
+#nav-list{
+	margin-top: 10px;
+
+}
+
+#nav-list a:hover {
+   background: #E7E7E7;	
+}
+#nav-list a  {
+color: #61122f;
+text-align: center;
+}
+
+
+#nav-list a span {
+	font-size: 1.8em;
+
+}
+
+#phone {
+	margin-top: 5px;
+}
+
+#phone a {
+text-align: right;
+padding-bottom: 0;
+}
+
+#phone div {
+	color: #557c3e;
+	text-align: right;
+	padding-right: 15px;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+	border: 1px solid #61122f;
+}
+
+.navbar-header button.navbar-toggle{
+	clear: both;
+}
+
+
+/********************* jumbotron *************************************/
+.container .jumbotron{
+    
+	padding: 0px;
+  	box-shadow: 0 0 50px #3F0C1F;
+   	border: 2px solid #3F0C1F;
+ 
+}
+
+/************************* Lower menu *******************************/
+
+
+#menu-tile, #specials-tile, #map-tile{
+	width: 100%;
+	height: 250px;
+	position: relative;
+	border: 1px solid black;
+	margin-bottom: 15px;
+	padding: 0px;
+}
+
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+	box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-tile {
+	background: url('../images/logo-img.jpg') no-repeat center;
+}
+
+#specials-tile {
+	background: url('../images/logo-img.jpg') no-repeat center;
+}
+
+
+#menu-tile span, #specials-tile span, #map-tile span{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.6em;
+	text-transform: uppercase;
+	background-color: #000;
+	color: #fff;
+	opacity: 0.6;
+}
+
+/************************************ FOOTER ***********************************************/
+.container .row,.text-center {
+	color: black;
+}
+
+#hours, #address{
+	line-height: 2;
+}
+
+#address p{
+	color: #557c3e;
+	font-size: .8em;
+	line-height: 1.8;
+}
+
+#testimonials
+{
+	font-style: italic;
+}
+
+#testimonials p:nth-child(1){
+	margin-top: 25px;
+}
+/***** media queries ****************/
+@media(min-width: 1200px){
+   .container .jumbotron {
+   	background: url('../images/logo-img.jpg') no-repeat center;
+   	height: 500px;
+ 
+   }
+ 
+}
+
+@media(min-width: 992px) and (max-width: 1199px){
+ #logo-img{	
+ 	background: url('../images/star-k-logo.png') no-repeat ;
+	background-size:100px; 
+ 	height: 100px;
+ 	width: 100px;
+ 	border: 1px solid black;
+         }
+  .container .jumbotron {
+   	background: url('../images/logo-img.jpg') no-repeat center;
+   	height: 500px;
+ 
+   }
+         
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  .container .jumbotron {
+   	background: url('../images/logo-img.jpg') no-repeat center;
+   	height: 500px;
+    }
+
+}
+
+@media(max-width: 767px){
+
+	.navbar-brand {
+		height: 80px;
+	}
+
+	.navbar-brand h1 {
+		font-size: 5vw;
+	}
+
+	#bs-example-navbar-collapse-1 a {
+		font-size: 1.2em;
+		margin-right: 5px;
+	}
+   #bs-example-navbar-collapse-1 a span{
+		font-size: 1em;
+	}
+	  #menu-tile, #specials-tile{
+  	width: 360px;
+  	margin: 0 auto 15px;
+  }
+   .panel-footer section{
+   	text-align: center;
+   }
+   .panel-footer section hr{
+   	width: 50%;
+   }
+    
+
+}
+
