@@ -173,7 +173,58 @@ padding-bottom: 0;
 #testimonials p:nth-child(1){
 	margin-top: 25px;
 }
-/***** media queries ****************/
+
+/************************** Menu- Categories ****************************/
+.category-tile {
+	position: relative;
+	height: 200px;
+	width: 200px;
+	overflow: hidden;
+	margin: 0 auto 15px;
+    border: 1px solid black;
+}
+.category-tile span {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	right: 0;
+	text-align: center;
+	background-color: #000;
+	color: #fff;
+	opacity: 0.75;
+	font-size: 1.2em;
+}
+
+.category-tile:hover{
+	box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+/** this is not working ****/
+.menu-categories-title + div{
+	margin-bottom: 50px;
+	  border: 1px solid black;
+}
+/** this above is not working ****/
+
+/***************************** single Category ***************************************/
+.menu-item-photo {
+	position: relative;
+	border: 1px solid black;
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+}
+
+.menu-item-photo span{
+	position: absolute;
+	opacity: 0.75;
+	background: #000;
+	color: #fff;
+	bottom:0;
+	right:0;
+}
+
+/********************************************* media queries ****************/
 @media(min-width: 1200px){
    .container .jumbotron {
    	background: url('../images/DM 00101.jpg') no-repeat center;
